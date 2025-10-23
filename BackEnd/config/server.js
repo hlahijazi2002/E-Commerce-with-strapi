@@ -1,12 +1,12 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
-  url: env('RENDER_EXTERNAL_URL'),
-  proxy: true,
+  url: "https://e-commerce-with-strapi-8.onrender.com",
   app: {
-    keys: env.array('APP_KEYS'),
+    keys: env.array("APP_KEYS"),
   },
-  webhooks: {
-    populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
+  cors: {
+    origin: ["https://delightful-platypus-38237c.netlify.app/"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    headers: "*",
+    credentials: true,
   },
 });
