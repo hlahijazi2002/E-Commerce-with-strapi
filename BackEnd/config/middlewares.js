@@ -1,4 +1,4 @@
-[13:40, 10/25/2025] ChatGPT: module.exports = [
+module.exports = [
   "strapi::logger",
   "strapi::errors",
   {
@@ -13,19 +13,19 @@
             "data:",
             "blob:",
             "dl.airtable.com",
-            "res.cloudinary.com",
-          ],
+            "res.cloudinary.com"
+          ], 
           "media-src": [
             "'self'",
             "data:",
             "blob:",
             "dl.airtable.com",
-            "res.cloudinary.com",
+            "res.cloudinary.com"
           ],
-          upgradeInsecureRequests: null,
-        },
-      },
-    },
+          upgradeInsecureRequests: null
+        }
+      }
+    }
   },
   {
     name: "strapi::cors",
@@ -33,13 +33,13 @@
       origin: ["https://delightful-platypus-38237c.netlify.app"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       headers: "*",
-      credentials: true,
-    },
+      credentials: true
+    }
   },
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
   "strapi::session",
   "strapi::favicon",
-  "strapi::public",
+  "strapi::public"
 ];
