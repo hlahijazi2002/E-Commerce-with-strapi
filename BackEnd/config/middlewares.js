@@ -1,4 +1,4 @@
-module.exports = [
+[13:40, 10/25/2025] ChatGPT: module.exports = [
   "strapi::logger",
   "strapi::errors",
   {
@@ -27,7 +27,15 @@ module.exports = [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://delightful-platypus-38237c.netlify.app"],
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      headers: "*",
+      credentials: true,
+    },
+  },
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
