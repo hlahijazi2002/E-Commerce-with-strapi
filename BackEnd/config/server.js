@@ -3,10 +3,4 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  cors: {
-    origin: ["https://delightful-platypus-38237c.netlify.app/"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    headers: "*",
-    credentials: true,
-  },
 });
