@@ -1,6 +1,14 @@
 module.exports = [
   "strapi::errors",
   {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://kaleidoscopic-semifreddo-b83937.netlify.app"],
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      headers: "*",
+      credentials: true,
+    },
+
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
