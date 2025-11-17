@@ -30,7 +30,7 @@ module.exports = [
     name: "strapi::cors",
     config: {
       enabled: true,
-      origin: ["https://brilliant-melomakarona-81b21b.netlify.app"], // اسم الدومين الخاص بالفرونت اند
+     origin: ["https://brilliant-melomakarona-81b21b.netlify.app/"],
     },
   },
   "strapi::poweredBy",
