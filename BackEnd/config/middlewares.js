@@ -26,7 +26,13 @@ module.exports = [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      enabled: true,
+      origin: ["https://brilliant-melomakarona-81b21b.netlify.app"], // اسم الدومين الخاص بالفرونت اند
+    },
+  },
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
@@ -35,4 +41,3 @@ module.exports = [
   "strapi::favicon",
   "strapi::public",
 ];
-
